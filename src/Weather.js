@@ -72,22 +72,20 @@ function date(time) {
           <h3> {date(time)} </h3>
           <h2> {weather.city} </h2>
           <div className="row">
-        <div className="col-4" className="weatherTemperature">
-        <span className="icona">  <img src= {weather.icon} className="imagine" /> </span>
+        <div className="col-4 weatherTemperature">
+        <span className="icona">  <img src= {weather.icon} className="imagine" alt="weather" /> </span>
          <span className="temp"> {Math.round(weather.temperature)}°C  </span>
            </div>
-         </div>
-        <div className="col-6">
+        <div className="col-6 main">
         <ul className="list">
           <li className="Description"> Description: {weather.description}</li>
           <li className="Humidity">Humidity: {Math.round(weather.humidity)} %</li>
           <li className="Windspeed">Wind Speed: {Math.round(weather.wind)} km/h</li>
-          
         </ul>
-        </div>
-        </div>
         
-       
+        </div>
+        </div>
+       </div>
     );
   } else {
     return form;
